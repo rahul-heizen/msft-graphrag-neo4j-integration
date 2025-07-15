@@ -1,13 +1,25 @@
 import os
 from typing import List, Optional
 from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from retrievers.hybrid_retriever import GraphRetriever
 from utils.neo4j_utils import neo4j_connection
 import openai
 from config.config import OPENAI_API_KEY
+import traceback
 
 app = FastAPI(title="Medical Chatbot")
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # Frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 retriever = GraphRetriever()
 
 # Set OpenAI API key
@@ -84,6 +96,8 @@ async def chat_endpoint(request: ChatRequest):
             sources=sources
         )
     except Exception as e:
+        print("Exception in /chat endpoint:")
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

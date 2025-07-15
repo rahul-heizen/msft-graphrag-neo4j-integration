@@ -1,0 +1,23 @@
+Patient Name: John Doe
+Age: 45
+Diagnosis: Type 2 Diabetes Mellitus
+
+History:
+John Doe is a 45-year-old male with a history of hypertension and obesity. He presented with increased thirst, frequent urination, and fatigue over the past two months.
+
+Medications:
+- Metformin 500mg twice daily
+- Lisinopril 10mg once daily
+
+Lab Results:
+- Fasting Blood Glucose: 160 mg/dL
+- HbA1c: 7.8%
+- Blood Pressure: 138/85 mmHg
+
+Plan:
+- Continue Metformin
+- Advise dietary modifications and regular exercise
+- Schedule follow-up in 3 months
+
+Notes:
+Patient was educated about the importance of blood sugar control and lifestyle changes. No signs of diabetic complications at this visit. 

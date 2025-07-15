@@ -1,0 +1,23 @@
+Patient Name: Jane Smith
+Age: 32
+Diagnosis: Asthma
+
+History:
+Jane Smith is a 32-year-old female with a history of seasonal allergies. She reports episodes of shortness of breath, wheezing, and chest tightness, especially during spring and after physical activity.
+
+Medications:
+- Albuterol inhaler as needed
+- Fluticasone nasal spray once daily
+
+Lab Results:
+- Peak Expiratory Flow Rate: 350 L/min
+- Oxygen Saturation: 98%
+
+Plan:
+- Continue current medications
+- Educate patient on asthma triggers and inhaler technique
+- Recommend allergy testing
+- Schedule follow-up in 1 month
+
+Notes:
+Patient was advised to avoid known allergens and to monitor symptoms. No acute distress noted during the visit. 
